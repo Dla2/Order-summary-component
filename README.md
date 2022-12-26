@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution](https://github.com/Dla2/Order-summary-component.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [My Live site](https://dla2.github.io/Order-summary-component/)
 
 ## My process
 
