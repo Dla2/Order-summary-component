@@ -1,0 +1,127 @@
+:root {
+    /*primary colours*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /*neutral colours*/
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Pale-blue);
+    background-image: url('./images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.wrapper {
+    background-color: var(--Very-pale-blue);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.wrapper > img {
+    max-width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.info-holder {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.info-holder > h1 {
+    color: var(--Dark-blue);
+}
+
+.info-holder > p {
+    color: var(--Desaturated-blue);
+}
+
+.plan-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--Pale-blue);
+    max-width: 95%;
+    margin-inline: auto;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+.plan-info > a {
+    margin-left: 1rem;
+}
+
+.plan-info > a:hover {
+    color: var(--Desaturated-blue);
+}
+
+.text-info > p{
+    color: var(--Desaturated-blue);
+}
+
+.proceed-btn {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-inline: 4.25rem;
+    background-color: var(--Bright-blue);
+    border-radius: 1rem;
+    max-width: 95%;
+    margin-inline: auto;
+    font-weight: 700;
+    color: var(--Very-pale-blue);
+    text-decoration: none;
+}
+
+.proceed-btn:hover {
+    background-color: var(--Desaturated-blue);
+}
+
+.cancel-btn {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cancel-btn:hover {
+    color: var(--Dark-blue);
+}
+
+@media (min-width:770px) {
+    body {
+        background-image: url('./images/pattern-background-desktop.svg');
+        background-repeat: no-repeat;
+        background-position-x: center; 
+    }
+
+    .wrapper {
+        max-width: 500px;
+    }
+}
